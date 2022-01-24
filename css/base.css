@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Dimensions */
+  --header-height: 4.5rem;
+
+  /* Fonts */
+  --logo-font: 'Pacifico', cursive;
+  --body-font: 'Spartan', sans-serif;
+  --handwriting: 'Shadows Into Light', cursive;
+
+  /* Colors */
+  --hue-orange: 39;
+  --hue-blue: 216;
+  --hand-color: hsla(var(--hue-orange), 100%, 50%, 1);
+  --hand-color-faded: hsla(var(--hue-orange), 100%, 50%, 0.5);
+  --navy: hsla(var(--hue-blue), 65%, 11%, 1);
+  --navy-lighter: hsla(var(--hue-blue), 40%, 20%, 1);
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--navy);
+}
+
+header {
+  height: var(--header-height);
+  width: 100%;
+  border-bottom: 1px solid var(--hand-color-faded);
+  padding: auto 0;
+  background: var(--navy);
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

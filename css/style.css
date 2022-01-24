@@ -1,0 +1,146 @@
+#header.rolling {
+  box-shadow: 0 0 12px var(--hand-color);
+}
+
+.container {
+  margin: 0 1.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 2rem;
+  color: #888888;
+}
+
+.logowhite {
+  display: flex;
+  align-items: middle;
+  justify-content: center;
+  height: 50px;
+}
+
+.logo span {
+  color: var(--hand-color);
+}
+
+.icon-menu {
+  font-size: 1.5rem;
+  color: var(--hand-color);
+}
+
+.icon-close {
+  display: none;
+}
+
+#home {
+  padding-top: calc(5rem + var(--header-height));
+}
+
+.text .handwriting {
+  font-family: var(--handwriting);
+  font-size: 1.5rem;
+  color: var(--hand-color);
+  padding-bottom: 1rem;
+}
+
+.text {
+  position: relative;
+}
+
+.text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+.text h1.subtitle {
+  color: #888888;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+.text h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--hand-color), var(--navy));
+}
+
+.text span.handwriting {
+  font-size: 2rem;
+}
+
+.text p {
+  padding-bottom: 1.5rem;
+  color: #888888;
+  line-height: 1.3rem;
+}
+
+.handwriting.scroll {
+  padding-top: 5rem;
+  text-align: center;
+  color: var(--hand-color-faded);
+}
+
+.vertical-line {
+  height: 10rem;
+  width: 50%;
+  border-right: 1px solid var(--hand-color-faded);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+#about .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  background: var(--navy-lighter);
+  position: relative;
+}
+
+.curriculum {
+  color: var(--navy);
+  font-weight: bold;
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--hand-color);
+  border-radius: 0.25rem;
+  border-style: none;
+}
+
+.curriculum:hover {
+  color: var(--hand-color);
+  background: var(--navy-lighter);
+  border: 2px solid var(--hand-color-faded);
+  padding: 0.875rem 1.875rem;
+  transition: 0.3s;
+}
+
+#projects img {
+  width: 300px;
+}

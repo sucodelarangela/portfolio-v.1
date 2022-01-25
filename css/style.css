@@ -44,6 +44,7 @@
   font-family: var(--handwriting);
   font-size: 1.5rem;
   color: var(--hand-color);
+  line-height: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -73,7 +74,7 @@
   font-size: 1.125rem;
   font-weight: bold;
   color: #ffffff;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
 }
 
 .divider {
@@ -100,7 +101,7 @@
 }
 
 .vertical-line {
-  height: 10rem;
+  height: 15rem;
   width: 50%;
   border-right: 1px solid var(--hand-color-faded);
 }
@@ -141,6 +142,26 @@
   transition: 0.3s;
 }
 
-#projects img {
-  width: 300px;
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem 2rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 0.25rem solid var(--hand-color);
+  box-shadow: 0 0 0.75rem var(--hand-color-faded);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 0.25rem solid var(--navy-lighter);
+}
+
+.card .image {
+  position: relative;
 }

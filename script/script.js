@@ -24,6 +24,7 @@ function showBackToTop() {
 window.addEventListener('scroll', () => {
   changeHeaderOnScroll()
   showBackToTop()
+  activateMenuAtCurrentSection()
 })
 
 //Toggle menu open
@@ -61,3 +62,33 @@ function changeMode() {
 }
 
 modeButton.addEventListener('click', changeMode)
+
+//Effect on menu according to position
+const sections = document.querySelectorAll('main section[id]') //all sections inside main with an id
+console.log(sections)
+
+function activateMenuAtCurrentSection() {
+  const checkpoint = window.pageYOffset + (window.innerHeight / 12) * 4
+  // numbers 8 and 4 reached by test and error. This is a general checkpoint for this page
+
+  // for every section of the constant sections above
+  for (const section of sections) {
+    const sectionTop = section.offsetTop //gets coordinate of its top
+    const sectionHeight = section.offsetHeight //gets its total height
+    const sectionId = section.getAttribute('id') //gets its attribute (id)
+    const checkpointStart = checkpoint >= sectionTop
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+    //if it's between the start and the end checkpoint...
+    if (checkpointStart && checkpointEnd) {
+      //...the document gets the 'anchor with the [href=#nameOfSectionId]' and adds a class '.active'
+      document
+        .querySelector('.menu ul li a[href*=' + sectionId + ']')
+        .classList.add('active')
+    } else {
+      document
+        .querySelector('.menu ul li a[href*=' + sectionId + ']')
+        .classList.remove('active')
+    }
+  }
+}

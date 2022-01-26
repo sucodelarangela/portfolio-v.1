@@ -37,12 +37,15 @@ nav.show .menu {
 }
 
 .menu li a:hover,
-.menu a:hover {
+.menu a:hover,
+.menu li a.active,
+.menu a.active {
   color: var(--hand-color);
   transition: 0.3s;
 }
 
-.menu li a::after {
+.menu li a::after,
+.menu li a.active::after {
   content: '';
   width: 0;
   height: 2px;
@@ -53,7 +56,8 @@ nav.show .menu {
   transition: width 0.3s;
 }
 
-.menu li a:hover::after {
+.menu li a:hover::after,
+.menu li a.active::after {
   width: 100%;
 }
 
@@ -210,16 +214,22 @@ nav.show .icon-close {
   display: block;
   margin: 0 auto;
   width: 100%;
+  max-width: 25rem;
   /* border: 0.25rem solid var(--navy-lighter); */
 }
 
-.card .image:hover {
+.card img:hover {
   box-shadow: 0 0 1rem var(--navy-lighter);
   transition: 0.3s;
 }
 
 .card .image {
   position: relative;
+}
+
+footer .icon-logo {
+  font-size: 2.5rem;
+  color: var(--white);
 }
 
 .brand {
@@ -234,7 +244,7 @@ nav.show .icon-close {
 }
 
 .brand p {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-align: center;
   padding: 0 0 0.5rem;
 }
@@ -247,6 +257,10 @@ nav.show .icon-close {
 
 .icon-mail {
   font-size: 1.5rem;
+}
+
+footer.footer {
+  padding-bottom: 2.5rem;
 }
 
 .footer .icon-logo {
@@ -292,4 +306,117 @@ nav.show .icon-close {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 3.125rem;
+  }
+
+  .icon-close {
+    top: 1.5rem;
+    right: 3.125rem;
+  }
+
+  #about .image,
+  #contact .contact {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  #contact .text p {
+    max-width: 31rem;
+    text-align: center;
+    padding: 0;
+    margin: 4rem auto;
+  }
+
+  footer.footer .container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .icon-logo {
+    text-align: start;
+  }
+
+  .brand p {
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu ul {
+    display: flex;
+    margin: 0 2rem 0;
+  }
+
+  .menu li a,
+  .menu a {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .menu li a::after,
+  .menu li a.active::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--hand-color), var(--navy));
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    transition: width 0.3s;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #about .divider {
+    margin-bottom: 4rem;
+  }
+
+  #about .text p {
+    max-width: 51rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #about .image,
+  #contact .contact {
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      margin: 0 10rem;
+    }
+
+    .icon-close {
+      top: 1.5rem;
+      right: 5rem;
+    }
+  }
 }

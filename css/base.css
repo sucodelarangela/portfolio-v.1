@@ -12,6 +12,7 @@
   --logo-font: 'Pacifico', cursive;
   --body-font: 'Spartan', sans-serif;
   --handwriting: 'Shadows Into Light', cursive;
+  --doodles: 'Homemade Apple', cursive;
 
   /* Colors */
   --white: #ffffff;
@@ -61,6 +62,4 @@ ul {
 
 footer {
   width: 100%;
-  border-top: 1px solid var(--hand-color-faded);
-  padding: 2.5rem 0;
 }

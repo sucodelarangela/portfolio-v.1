@@ -14,14 +14,15 @@
   --handwriting: 'Shadows Into Light', cursive;
 
   /* Colors */
-  --white: #ffffff;
-  --gray: #888888;
-  --hue-orange: 39;
-  --hue-blue: 216;
+  --white: hsla(216, 65%, 11%, 1);
+  --gray: hsla(216, 40%, 20%, 1);
+  --hue-orange: 24;
+  --hue-blue: 255;
   --hand-color: hsla(var(--hue-orange), 100%, 50%, 1);
-  --hand-color-faded: hsla(var(--hue-orange), 100%, 50%, 0.5);
-  --navy: hsla(var(--hue-blue), 65%, 11%, 1);
-  --navy-lighter: hsla(var(--hue-blue), 40%, 20%, 1);
+  --hand-color-faded: hsla(var(--hue-orange), 100%, 50%, 1);
+  --navy: hsla(var(--hue-blue), 60%, 84%, 1);
+  /* --navy: hsla(var(--hue-blue), 65%, 11%, 1); */
+  --navy-lighter: #e7e7e7;
 }
 
 html {

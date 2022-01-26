@@ -21,24 +21,28 @@ nav.show .menu {
   place-content: center;
 }
 
-.menu ul {
-  gap: 5rem;
+.menu ul,
+.menu a {
+  gap: 4rem;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
+.menu li a,
 .menu a {
-  color: #ffffff;
+  color: var(--white);
   font-weight: bolder;
   font-size: 1.5rem;
   position: relative;
 }
 
+.menu li a:hover,
 .menu a:hover {
   color: var(--hand-color);
   transition: 0.3s;
 }
 
-.menu a::after {
+.menu li a::after {
   content: '';
   width: 0;
   height: 2px;
@@ -49,21 +53,13 @@ nav.show .menu {
   transition: width 0.3s;
 }
 
-.menu a:hover::after {
+.menu li a:hover::after {
   width: 100%;
 }
 
-.logo {
-  font-family: var(--logo-font);
-  font-size: 2rem;
-  color: #888888;
-}
-
-.logowhite {
-  display: flex;
-  align-items: middle;
-  justify-content: center;
-  height: 50px;
+.icon-logo {
+  font-size: 3.125rem;
+  color: var(--hand-color);
 }
 
 .logo span {
@@ -109,30 +105,30 @@ nav.show .icon-close {
 .text h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--white);
   padding-bottom: 1rem;
 }
 
 .text h1.subtitle {
-  color: #888888;
+  color: var(--gray);
 }
 
 .text h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--white);
   padding-bottom: 1rem;
 }
 
 .text h3 {
   font-size: 1.125rem;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--white);
   padding: 2rem 0;
 }
 
 .divider {
-  height: 1px;
+  height: 2px;
   width: 100%;
   margin-bottom: 1.5rem;
   background: linear-gradient(90deg, var(--hand-color), var(--navy));
@@ -144,7 +140,7 @@ nav.show .icon-close {
 
 .text p {
   padding-bottom: 1.5rem;
-  color: #888888;
+  color: var(--gray);
   line-height: 1.3rem;
 }
 
@@ -253,6 +249,10 @@ nav.show .icon-close {
   font-size: 1.5rem;
 }
 
+.footer .icon-logo {
+  text-align: center;
+}
+
 .social,
 .links {
   justify-content: center;
@@ -271,7 +271,7 @@ nav.show .icon-close {
 .social i,
 .links i {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .social i:hover,
@@ -281,7 +281,7 @@ nav.show .icon-close {
 }
 
 .back-to-top.show {
-  color: #ffffff;
+  color: var(--white);
   background: var(--navy-lighter);
   font-size: 1.5rem;
   line-height: 0;

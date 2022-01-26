@@ -44,3 +44,20 @@ for (const item of menu) {
     nav.classList.remove('show')
   })
 }
+
+//Toggle light mode
+const modeButton = document.querySelector('.mode')
+const style = document.querySelector('#style')
+
+function changeMode() {
+  if (modeButton.classList.contains('icon-sun')) {
+    modeButton.classList.remove('icon-sun')
+    modeButton.classList.add('icon-moon')
+  } else {
+    modeButton.classList.remove('icon-moon')
+    modeButton.classList.add('icon-sun')
+  }
+  style.disabled = !style.disabled
+}
+
+modeButton.addEventListener('click', changeMode)

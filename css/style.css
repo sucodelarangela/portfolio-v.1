@@ -160,17 +160,17 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  border: 0.25rem solid var(--navy-lighter);
+  /* border: 0.25rem solid var(--navy-lighter); */
+}
+
+.card .image:hover {
+  box-shadow: 0 0 1rem var(--navy-lighter);
+  transition: 0.3s;
 }
 
 .card .image {
   position: relative;
 }
-
-/* .contact .icon-mail {
-  font-size: 1.25rem;
-  padding-right: 0.5rem;
-} */
 
 .brand {
   display: grid;
@@ -196,19 +196,29 @@
   font-size: 1.5rem;
 }
 
-.social {
+.social,
+.links {
   justify-content: center;
 }
 
-.social ul {
+.social ul,
+.links ul {
   grid-auto-flow: column;
   width: fit-content;
 }
-.social li {
+.social li,
+.links li {
   display: inline-block;
 }
 
-.social i {
+.social i,
+.links i {
   font-size: 1.5rem;
   color: #ffffff;
+}
+
+.social i:hover,
+.links i:hover {
+  color: var(--hand-color);
+  transition: 0.3s;
 }

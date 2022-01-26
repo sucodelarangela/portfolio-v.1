@@ -229,6 +229,7 @@ nav.show .icon-close {
 .brand {
   display: grid;
   justify-content: center;
+  padding-bottom: 0.5rem;
 }
 
 .brand .logowhite {
@@ -238,6 +239,8 @@ nav.show .icon-close {
 
 .brand p {
   font-size: 0.875rem;
+  text-align: center;
+  padding: 0 0 0.5rem;
 }
 
 .contact a {
@@ -275,4 +278,18 @@ nav.show .icon-close {
 .links i:hover {
   color: var(--hand-color);
   transition: 0.3s;
+}
+
+.back-to-top.show {
+  color: #ffffff;
+  background: var(--navy-lighter);
+  font-size: 1.5rem;
+  line-height: 0;
+
+  clip-path: circle();
+  padding: 0.5rem;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }

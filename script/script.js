@@ -10,8 +10,20 @@ function changeHeaderOnScroll() {
   }
 }
 
+//Back to top
+const backToTop = document.querySelector('.back-to-top')
+
+function showBackToTop() {
+  if (window.scrollY >= 600) {
+    backToTop.classList.add('show')
+  } else {
+    backToTop.classList.remove('show')
+  }
+}
+
 window.addEventListener('scroll', () => {
   changeHeaderOnScroll()
+  showBackToTop()
 })
 
 //Toggle menu open

@@ -101,7 +101,7 @@
 }
 
 .vertical-line {
-  height: 15rem;
+  height: 18rem;
   width: 50%;
   border-right: 1px solid var(--hand-color-faded);
 }
@@ -110,7 +110,8 @@
   padding: 5rem 0;
 }
 
-#about .image {
+#about .image,
+#contact .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +124,7 @@
   position: relative;
 }
 
-.curriculum {
+.button {
   color: var(--navy);
   font-weight: bold;
   width: fit-content;
@@ -134,7 +135,7 @@
   border-style: none;
 }
 
-.curriculum:hover {
+.button:hover {
   color: var(--hand-color);
   background: var(--navy-lighter);
   border: 2px solid var(--hand-color-faded);
@@ -164,4 +165,50 @@
 
 .card .image {
   position: relative;
+}
+
+/* .contact .icon-mail {
+  font-size: 1.25rem;
+  padding-right: 0.5rem;
+} */
+
+.brand {
+  display: grid;
+  justify-content: center;
+}
+
+.brand .logowhite {
+  display: block;
+  margin: 0 auto;
+}
+
+.brand p {
+  font-size: 0.875rem;
+}
+
+.contact a {
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.icon-mail {
+  font-size: 1.5rem;
+}
+
+.social {
+  justify-content: center;
+}
+
+.social ul {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+.social li {
+  display: inline-block;
+}
+
+.social i {
+  font-size: 1.5rem;
+  color: #ffffff;
 }

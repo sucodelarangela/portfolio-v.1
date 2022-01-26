@@ -22,6 +22,10 @@
   --navy-lighter: hsla(var(--hue-blue), 40%, 20%, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
   background: var(--navy);
@@ -51,4 +55,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid var(--hand-color-faded);
+  padding: 2.5rem 0;
 }

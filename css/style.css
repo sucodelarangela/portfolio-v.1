@@ -424,6 +424,11 @@ footer.footer {
     transition: width 0.3s;
   }
 
+  .menu li a:hover::after,
+  .menu li a.active::after {
+    width: 100%;
+  }
+
   #home {
     position: relative;
   }

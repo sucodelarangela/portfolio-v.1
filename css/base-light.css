@@ -14,15 +14,12 @@
   --handwriting: 'Shadows Into Light', cursive;
 
   /* Colors */
-  --white: hsla(216, 65%, 11%, 1);
-  --gray: hsla(216, 40%, 20%, 1);
-  --hue-orange: 24;
-  --hue-blue: 255;
-  --hand-color: hsla(var(--hue-orange), 100%, 50%, 1);
-  --hand-color-faded: hsla(var(--hue-orange), 100%, 50%, 1);
-  --navy: hsla(var(--hue-blue), 60%, 84%, 1);
-  /* --navy: hsla(var(--hue-blue), 65%, 11%, 1); */
-  --navy-lighter: #e7e7e7;
+  --white: #0a182e;
+  --gray: #1f2f47;
+  --hand-color: hsl(0, 100%, 33%);
+  --hand-color-faded: hsl(0, 100%, 33%);
+  --navy: hsl(253, 100%, 92%);
+  --navy-lighter: hsl(253, 100%, 92%);
 }
 
 html {
@@ -62,6 +59,4 @@ ul {
 
 footer {
   width: 100%;
-  border-top: 1px solid var(--hand-color-faded);
-  padding: 2.5rem 0;
 }

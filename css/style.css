@@ -94,6 +94,13 @@ nav.show .icon-close {
   padding-top: calc(5rem + var(--header-height));
 }
 
+.venustas,
+.firmitas,
+.utilitas {
+  visibility: hidden;
+  position: absolute;
+}
+
 .text .handwriting {
   font-family: var(--handwriting);
   font-size: 1.5rem;
@@ -171,7 +178,7 @@ nav.show .icon-close {
   align-items: center;
 }
 
-#about img {
+#about .photo {
   width: 200px;
   border-radius: 50%;
   background: var(--navy-lighter);
@@ -247,6 +254,12 @@ footer .icon-logo {
   font-size: 0.75rem;
   text-align: center;
   padding: 0 0 0.5rem;
+}
+
+#contact .watermark .dotted,
+#about .watermark .dotted {
+  visibility: hidden;
+  position: absolute;
 }
 
 .contact a {
@@ -337,6 +350,29 @@ footer.footer {
     margin: 4rem auto;
   }
 
+  #contact,
+  #about {
+    position: relative;
+  }
+
+  #contact .watermark .dotted {
+    visibility: visible;
+    opacity: 0.3;
+    width: 10rem;
+    left: 0rem;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #about .watermark .dotted {
+    visibility: visible;
+    opacity: 0.3;
+    width: 20rem;
+    right: 0;
+    bottom: -3rem;
+    z-index: -1;
+  }
+
   footer.footer .container {
     display: grid;
     grid-auto-flow: column;
@@ -386,6 +422,34 @@ footer.footer {
     left: 0;
     bottom: -2.5px;
     transition: width 0.3s;
+  }
+
+  #home {
+    position: relative;
+  }
+
+  .utilitas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: 10rem;
+    bottom: 0rem;
+  }
+
+  .firmitas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: 2.5rem;
+    bottom: 5rem;
+  }
+
+  .venustas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: -2.5rem;
+    bottom: 10rem;
   }
 
   .cards {

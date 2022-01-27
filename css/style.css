@@ -306,7 +306,7 @@ footer.footer {
   transition: 0.3s;
 }
 
-.back-to-top.show {
+.back-to-top {
   color: var(--white);
   background: var(--navy-lighter);
   font-size: 1.5rem;
@@ -318,6 +318,17 @@ footer.footer {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ========== MEDIA QUERIES ========== */

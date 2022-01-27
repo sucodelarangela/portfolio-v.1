@@ -258,8 +258,7 @@ footer .icon-logo {
 
 #contact .watermark .dotted,
 #about .watermark .dotted {
-  visibility: hidden;
-  position: absolute;
+  display: none;
 }
 
 .contact a {
@@ -356,7 +355,8 @@ footer.footer {
   }
 
   #contact .watermark .dotted {
-    visibility: visible;
+    display: block;
+    position: absolute;
     opacity: 0.3;
     width: 10rem;
     left: 0rem;
@@ -365,7 +365,8 @@ footer.footer {
   }
 
   #about .watermark .dotted {
-    visibility: visible;
+    display: block;
+    position: absolute;
     opacity: 0.3;
     width: 20rem;
     right: 0;

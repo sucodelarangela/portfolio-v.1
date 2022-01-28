@@ -8,7 +8,8 @@ _For the English version of this README, click [here](#English)_
   <p>Hosted by <a href="https://www.netlify.com/">Netlify</a></p>
 </div>
 
-![](/Images/og_image.png)
+
+![](/images/og_image.PNG)
 
 ## Visão geral
 
@@ -40,7 +41,7 @@ Caso tenha gostado do template que eu desenvolvi, você pode dar um fork nesse r
   <p>Hosted by <a href="https://www.netlify.com/">Netlify</a></p>
 </div>
 
-![](/Images/og_image.png)
+![](/images/og_image.PNG)
 
 ## Overview
 

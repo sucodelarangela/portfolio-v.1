@@ -32,7 +32,7 @@ Caso tenha gostado do template que eu desenvolvi, você pode dar um fork nesse r
 
 <div id="English" style="font-style: italic;">English version</div>
 
-<div style="text-align: center;">
+<div align="center">
   <img src="https://raw.githubusercontent.com/sucodelarangela/portfolio/816c8f9d4e2ed795a95f931e8e937acf70c5d228/images/logo_white.svg" alt="Angela's logo" style="width: 100px">
   <h2>
     <a href="https://angelacaldas-portfolio-2022.netlify.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>

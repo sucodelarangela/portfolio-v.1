@@ -5,9 +5,8 @@ _For the English version of this README, click [here](#English)_
   <h2>
     <a href="https://angelacaldas-portfolio-2022.netlify.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>
   </h2>
-  <p>Hosted by <a href="https://www.netlify.com/">Netlify</a></p>
+  <p>Hosted by <a href="https://angelacaldas.vercel.app">Vercel</a></p>
 </div>
-
 
 ![](/images/og_image.PNG)
 

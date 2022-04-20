@@ -3,9 +3,9 @@ _For the English version of this README, click [here](#English)_
 <div align="center">
   <img src="https://raw.githubusercontent.com/sucodelarangela/portfolio/816c8f9d4e2ed795a95f931e8e937acf70c5d228/images/logo_white.svg" alt="Angela's logo" style="width: 100px">
   <h2>
-    <a href="https://angelacaldas-portfolio-2022.netlify.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>
+    <a href="https://angelacaldas.vercel.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>
   </h2>
-  <p>Hosted by <a href="https://angelacaldas.vercel.app">Vercel</a></p>
+  <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
 </div>
 
 ![](/images/og_image.PNG)
@@ -35,9 +35,9 @@ Caso tenha gostado do template que eu desenvolvi, você pode dar um fork nesse r
 <div align="center">
   <img src="https://raw.githubusercontent.com/sucodelarangela/portfolio/816c8f9d4e2ed795a95f931e8e937acf70c5d228/images/logo_white.svg" alt="Angela's logo" style="width: 100px">
   <h2>
-    <a href="https://angelacaldas-portfolio-2022.netlify.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>
+    <a href="https://angelacaldas.vercel.app/" target="_blank" style="text-decoration: none; color: white">Angela Caldas | Portfolio v1</a>
   </h2>
-  <p>Hosted by <a href="https://www.netlify.com/">Netlify</a></p>
+  <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
 </div>
 
 ![](/images/og_image.PNG)

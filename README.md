@@ -2,6 +2,8 @@
 
 # Portfolio pessoal | Front-end Dev
 
+(Entrará em processo de atualização)
+
 </div>
 
 _[Read it in English](#English)_

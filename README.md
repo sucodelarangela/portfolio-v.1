@@ -57,4 +57,4 @@ In case you liked this template I developed, you can fork the repo and adapt it 
 
 ---
 
-Developed with 🧡 by [@sucodelarangela 🍊](https://angelacaldas.vercel.app)
+Developed with 🧡 by [@sucodelarangela](https://angelacaldas.vercel.app)

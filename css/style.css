@@ -1,512 +1,519 @@
 #header.rolling {
-    box-shadow: 0 0 12px var(--hand-color);
+  box-shadow: 0 0 12px var(--hand-color);
 }
 
 .container {
-    margin: 0 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 nav.show .menu {
-    position: fixed;
-    background: var(--navy-lighter);
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-content: center;
+  position: fixed;
+  background: var(--navy-lighter);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
 }
 
 .menu ul,
 .menu a {
-    gap: 4rem;
-    text-align: center;
-    margin-bottom: 4rem;
+  gap: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .menu li a,
 .menu a {
-    color: var(--white);
-    font-weight: bolder;
-    font-size: 1.5rem;
-    position: relative;
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  position: relative;
 }
 
 .menu li a:hover,
 .menu a:hover,
 .menu li a.active,
 .menu a.active {
-    color: var(--hand-color);
-    transition: 0.3s;
+  color: var(--hand-color);
+  transition: 0.3s;
 }
 
 .menu li a::after,
 .menu li a.active::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--hand-color), var(--navy-lighter));
-    position: absolute;
-    left: 0;
-    bottom: -2.5px;
-    transition: width 0.3s;
+  content: '';
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--hand-color), var(--navy-lighter));
+  position: absolute;
+  left: 0;
+  bottom: -2.5px;
+  transition: width 0.3s;
 }
 
 .menu li a:hover::after,
 .menu li a.active::after {
-    width: 100%;
+  width: 100%;
 }
 
 .icon-logo {
-    font-size: 3.125rem;
-    color: var(--hand-color);
+  font-size: 3.125rem;
+  color: var(--hand-color);
 }
 
 .logo span {
-    color: var(--hand-color);
+  color: var(--hand-color);
 }
 
 .toggle {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--hand-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--hand-color);
 }
 
 .icon-close {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 nav.show .icon-close {
-    visibility: visible;
-    opacity: 1;
-    top: 1.5rem;
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
 }
 
 #home {
-    padding-top: calc(5rem + var(--header-height));
+  padding-top: calc(5rem + var(--header-height));
 }
 
 .venustas,
 .firmitas,
 .utilitas {
-    visibility: hidden;
-    position: absolute;
+  visibility: hidden;
+  position: absolute;
 }
 
 .text .handwriting {
-    font-family: var(--handwriting);
-    font-size: 1.5rem;
-    color: var(--hand-color);
-    line-height: 2rem;
-    padding-bottom: 1rem;
+  font-family: var(--handwriting);
+  font-size: 1.5rem;
+  color: var(--hand-color);
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 
 .text {
-    position: relative;
+  position: relative;
 }
 
 .text h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--white);
-    padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  padding-bottom: 1rem;
 }
 
 .text h1.subtitle {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 .text h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--white);
-    padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  padding-bottom: 1rem;
 }
 
 .text h3 {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: var(--white);
-    padding: 2rem 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--white);
+  padding: 2rem 0;
 }
 
 .divider {
-    height: 2px;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, var(--hand-color), var(--navy));
+  height: 2px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--hand-color), var(--navy));
 }
 
 .text span.handwriting {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .text p {
-    padding-bottom: 1.5rem;
-    color: var(--gray);
-    line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--gray);
+  line-height: 1.5rem;
 }
 
 .article.handwriting {
-    color: var(--white);
-    transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  transition: 0.3s;
+  padding-bottom: 1.5rem;
 }
 
 .article.handwriting:hover {
-    color: var(--hand-color);
+  color: var(--hand-color);
+}
+
+.article.handwriting > i {
+  padding-right: 1rem;
 }
 
 .handwriting.scroll {
-    padding-top: 5rem;
-    text-align: center;
-    color: var(--hand-color-faded);
+  padding-top: 5rem;
+  text-align: center;
+  color: var(--hand-color-faded);
 }
 
 .vertical-line {
-    height: 18rem;
-    width: 50%;
-    border-right: 1px solid var(--hand-color-faded);
+  height: 18rem;
+  width: 50%;
+  border-right: 1px solid var(--hand-color-faded);
 }
 
 .section {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 
 #about .image,
 #contact .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #about .photo {
-    width: 200px;
-    border-radius: 50%;
-    background: var(--navy-lighter);
-    position: relative;
+  width: 200px;
+  border-radius: 50%;
+  background: var(--navy-lighter);
+  position: relative;
 }
 
 .button {
-    color: var(--navy);
-    font-weight: bold;
-    width: fit-content;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: var(--hand-color);
-    border-radius: 0.25rem;
-    border-style: none;
+  color: var(--navy);
+  font-weight: bold;
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--hand-color);
+  border-radius: 0.25rem;
+  border: 2px solid var(--hand-color);
+  transition: 0.3s;
 }
 
 .button:hover {
-    color: var(--hand-color);
-    background: var(--navy-lighter);
-    border: 2px solid var(--hand-color-faded);
-    padding: 0.875rem 1.875rem;
-    transition: 0.3s;
+  color: var(--hand-color);
+  background: var(--navy-lighter);
+  border: 2px solid var(--hand-color-faded);
 }
 
 .grid {
-    display: grid;
-    gap: 2rem;
+  display: grid;
+  gap: 2rem;
 }
 
 .card {
-    text-align: center;
-    padding: 2rem 2rem;
-    border-radius: 0.25rem 0.25rem 0 0;
-    border-bottom: 0.25rem solid var(--hand-color);
-    box-shadow: 0 0 0.75rem var(--hand-color-faded);
+  text-align: center;
+  padding: 2rem 2rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 0.25rem solid var(--hand-color);
+  box-shadow: 0 0 0.75rem var(--hand-color-faded);
 }
 
 .card img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 25rem;
-    /* border: 0.25rem solid var(--navy-lighter); */
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 25rem;
+  /* border: 0.25rem solid var(--navy-lighter); */
 }
 
 .card img:hover {
-    box-shadow: 0 0 1rem var(--navy-lighter);
-    transition: 0.3s;
+  box-shadow: 0 0 1rem var(--navy-lighter);
+  transition: 0.3s;
 }
 
 .card .image {
-    position: relative;
+  position: relative;
 }
 
 footer .icon-logo {
-    font-size: 2.5rem;
-    color: var(--white);
+  font-size: 2.5rem;
+  color: var(--white);
 }
 
 .brand {
-    display: grid;
-    justify-content: center;
-    padding-bottom: 0.5rem;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 0.5rem;
 }
 
 .brand .logowhite {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .brand p {
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 0 0 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0 0 0.5rem;
 }
 
 #contact .watermark .dotted,
 #about .watermark .dotted {
-    display: none;
+  display: none;
 }
 
 .contact a {
-    grid-auto-flow: column;
-    gap: 0.5rem;
-    align-items: center;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .icon-mail {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 footer.footer {
-    padding-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer .icon-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .social,
 .links {
-    justify-content: center;
+  justify-content: center;
 }
 
 .social ul,
 .links ul {
-    grid-auto-flow: column;
-    width: fit-content;
+  grid-auto-flow: column;
+  width: fit-content;
 }
 .social li,
 .links li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .social i,
 .links i {
-    font-size: 1.5rem;
-    color: var(--white);
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 .social i:hover,
 .links i:hover {
-    color: var(--hand-color);
-    transition: 0.3s;
+  color: var(--hand-color);
+  transition: 0.3s;
 }
 
 .back-to-top {
-    color: var(--white);
-    background: var(--navy-lighter);
-    font-size: 1.5rem;
-    line-height: 0;
+  color: var(--white);
+  background: var(--navy-lighter);
+  font-size: 1.5rem;
+  line-height: 0;
 
-    clip-path: circle();
-    padding: 0.5rem;
+  clip-path: circle();
+  padding: 0.5rem;
 
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
 }
 
 .back-to-top.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ========== MEDIA QUERIES ========== */
 @media screen and (min-width: 768px) {
-    .container {
-        margin: 0 3.125rem;
-    }
+  .container {
+    margin: 0 3.125rem;
+  }
 
-    .icon-close {
-        top: 1.5rem;
-        right: 3.125rem;
-    }
+  .icon-close {
+    top: 1.5rem;
+    right: 3.125rem;
+  }
 
-    #about .image,
-    #contact .contact {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5rem;
-    }
+  #about .image,
+  #contact .contact {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
 
-    .button {
-        margin: 0;
-    }
+  .button {
+    margin: 0;
+  }
 
-    #contact .text p {
-        max-width: 31rem;
-        text-align: center;
-        padding: 0;
-        margin: 4rem auto;
-    }
+  #contact .text p {
+    max-width: 31rem;
+    text-align: center;
+    padding: 0;
+    margin: 4rem auto;
+  }
 
-    #contact,
-    #about {
-        position: relative;
-    }
+  #contact,
+  #about {
+    position: relative;
+  }
 
-    #contact .watermark .dotted {
-        display: block;
-        position: absolute;
-        opacity: 0.3;
-        width: 10rem;
-        left: 0rem;
-        bottom: 0;
-        z-index: -1;
-    }
+  #contact .watermark .dotted {
+    display: block;
+    position: absolute;
+    opacity: 0.3;
+    width: 10rem;
+    left: 0rem;
+    bottom: 0;
+    z-index: -1;
+  }
 
-    #about .watermark .dotted {
-        display: block;
-        position: absolute;
-        opacity: 0.3;
-        width: 20rem;
-        right: 0;
-        bottom: -3rem;
-        z-index: -1;
-    }
+  #about .watermark .dotted {
+    display: block;
+    position: absolute;
+    opacity: 0.3;
+    width: 20rem;
+    right: 0;
+    bottom: -3rem;
+    z-index: -1;
+  }
 
-    footer.footer .container {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  footer.footer .container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .footer .icon-logo {
-        text-align: start;
-    }
+  .footer .icon-logo {
+    text-align: start;
+  }
 
-    .brand p {
-        display: block;
-        text-align: left;
-        padding: 0;
-    }
+  .brand p {
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .menu {
-        display: flex;
-        gap: 2rem;
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu ul {
+    display: flex;
+    margin: 0 2rem 0;
+  }
+
+  .menu li a,
+  .menu a {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .menu li a::after,
+  .menu li a.active::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--hand-color), var(--navy));
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    transition: width 0.3s;
+  }
+
+  .menu li a:hover::after,
+  .menu li a.active::after {
+    width: 100%;
+  }
+
+  #home {
+    position: relative;
+  }
+
+  .utilitas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: 10rem;
+    bottom: 0rem;
+  }
+
+  .firmitas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: 2.5rem;
+    bottom: 5rem;
+  }
+
+  .venustas {
+    visibility: visible;
+    height: 4rem;
+    opacity: 0.3;
+    right: -2.5rem;
+    bottom: 10rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #about .divider {
+    margin-bottom: 4rem;
+  }
+
+  #about .text p {
+    max-width: 51rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #about .image,
+  #contact .contact {
+    margin-top: 4rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      margin: 0 10rem;
     }
 
-    .menu ul {
-        display: flex;
-        margin: 0 2rem 0;
+    .icon-close {
+      top: 1.5rem;
+      right: 5rem;
     }
-
-    .menu li a,
-    .menu a {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    .icon-menu {
-        display: none;
-    }
-
-    .menu li a::after,
-    .menu li a.active::after {
-        content: '';
-        width: 0;
-        height: 2px;
-        background: linear-gradient(90deg, var(--hand-color), var(--navy));
-        position: absolute;
-        left: 0;
-        bottom: -2.5px;
-        transition: width 0.3s;
-    }
-
-    .menu li a:hover::after,
-    .menu li a.active::after {
-        width: 100%;
-    }
-
-    #home {
-        position: relative;
-    }
-
-    .utilitas {
-        visibility: visible;
-        height: 4rem;
-        opacity: 0.3;
-        right: 10rem;
-        bottom: 0rem;
-    }
-
-    .firmitas {
-        visibility: visible;
-        height: 4rem;
-        opacity: 0.3;
-        right: 2.5rem;
-        bottom: 5rem;
-    }
-
-    .venustas {
-        visibility: visible;
-        height: 4rem;
-        opacity: 0.3;
-        right: -2.5rem;
-        bottom: 10rem;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-    }
-
-    #about .divider {
-        margin-bottom: 4rem;
-    }
-
-    #about .text p {
-        max-width: 51rem;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #about .image,
-    #contact .contact {
-        margin-top: 4rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-        .container {
-            margin: 0 10rem;
-        }
-
-        .icon-close {
-            top: 1.5rem;
-            right: 5rem;
-        }
-    }
+  }
 }

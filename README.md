@@ -27,7 +27,7 @@ Caso tenha gostado do template que eu desenvolvi, você pode dar um fork nesse r
 | 🚀 URL         | [**https://angelacaldas.vercel.app/**](https://angelacaldas.vercel.app/) |
 | 🔥 Desafio     | Não se aplica.                                                           |
 
-![](https://raw.githubusercontent.com/sucodelarangela/portfolio/master/images/og_image.jpg#vitrinedev)
+![](https://raw.githubusercontent.com/sucodelarangela/portfolio/main/images/og-image.png#vitrinedev)
 
 ## Detalhes do projeto
 
